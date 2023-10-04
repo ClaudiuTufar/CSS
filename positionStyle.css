@@ -1,0 +1,80 @@
+.container {
+    border: 2px dotted #000;
+    position: relative;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-bottom: 20px;
+}
+
+.container div.relative {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-color: green;
+    z-index: 1;
+}
+
+.container div.fixed{
+    position: fixed;
+    background-color: tomato;
+    bottom: 0;
+    top: 0;
+    right: 30px;
+    z-index: -1;
+}
+
+.container div.absolute{
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+.container div.sticky{
+    position: sticky;
+    bottom: 20px;
+
+}
+
+.container div.static{
+    position: static;
+}
+
+.content{
+    margin-top: 50px;
+}
+
+.link:hover {
+    color: red;
+}
+
+.link:focus {
+    color: violet;
+}
+
+/* .link:visited {
+    color: green;
+} */
+
+.list li:first-child{
+    color: red;
+}
+
+.list li:last-child{
+    color: green;
+}
+
+.list li:nth-child(odd) {
+    color: yellow;
+}
+
+.list li:nth-child(even) {
+    color: violet;
+}
+
+.list li:nth-child(2n+1) {
+    color: rgb(128, 185, 224);
+}
